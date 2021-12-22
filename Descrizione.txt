@@ -1,0 +1,24 @@
+Il programma gestisce un elenco telefonico. 
+
+L'elenco risiede su un file testuale chiamato "telephone".
+
+Gli utenti si distinguono in due tipologie: utenti amministratori e utenti occasionali.
+
+Gli utenti occasionali sono autorizzati a compiere un numero limitato di azioni, in particolare
+possono soltanto visualizzare l'elenco telefonico, ed eventualmente effettuare il login per accedere
+come utenti amministratori. A tale scopo è stata inserita una funzione di login che verifica se 
+username e password inseriti dall'utente corrispondono a quelli esistenti in un file apposito chiamato
+"users".
+
+Gli utenti amministratori possono invece accedere a tutte le funzionalità offerte dall'applicazione, 
+in particolare oltre a poter visualizzare l'elenco telefonico possono aggiungere nuovi contatti e 
+possono effettuare una ricerca testuale all'interno dell'elenco.
+
+L'applicazione è gestita in modo tale da permettere l'esecuzione di più client concorrentemente. 
+
+In ogni momento, l'utente può decidere di interrompere l'esecuzione di una funzionalità oppure di 
+tutta l'applicazione premendo la combinazione di tasti CTRL+C. 
+
+Il server è composto da un processo padre e un processo figlio, sempre attivi. Il padre rimarrà in 
+ascolto di richieste di connessione da parte di nuovi client, mentre il figlio si dedicherà alla gestione 
+vera e propria delle specifiche funzionalità di tutti i client. 
